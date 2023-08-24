@@ -6,7 +6,7 @@
 |        |      |
 |        | zip/ |
 |        |      |
-|        | qa/  |
+|        | m/   |
 |        |      |
 
 
@@ -90,4 +90,70 @@ https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx
 |         m | 醫師   |
 |           |        |
 |         1 | 第一次 |
+
+
+
+* zip unzip
+
+** 0
+
+
+| 10 | aims, references |
+|    |                  |
+| 20 | 111m1.zip        |
+|    |                  |
+| 30 |                  |
+|    |                  |
+| 40 |                  |
+|    |                  |
+
+
+** 10
+
+
+** 20
+
+
+#+HEADERS: :dir ./files
+#+HEADERS: :results silent
+#+HEADERS: :results raw
+#+BEGIN_SRC sh
+
+  ls -lha zip
+
+#+END_SRC
+
+
+#+HEADERS: :results silent
+#+HEADERS: :dir ./files
+#+HEADERS: :results raw
+#+BEGIN_SRC sh
+
+  ls -lha zip/111m1.zip
+
+#+END_SRC
+
+
+#+HEADERS: :results silent
+#+HEADERS: :dir ./files
+#+HEADERS: :results raw
+#+BEGIN_SRC sh
+
+  unzip -O big5 -l zip/111m1.zip 
+
+#+END_SRC
+
+
+#+HEADERS: :results silent
+#+HEADERS: :dir ./files
+#+HEADERS: :results raw
+#+BEGIN_SRC sh
+
+  unzip -O big5 -j zip/111m1.zip 考畢題答/* -d 111m1
+
+#+END_SRC
+
+
+** 30
+
 
